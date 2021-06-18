@@ -1,0 +1,42 @@
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            int sayi;
+            Console.Write("Notunuzu Giriniz : ");
+            sayi = Convert.ToInt32(Console.ReadLine());
+            
+            if (sayi<=100 && sayi>=90)
+            {
+                Console.WriteLine("Harf Notunuz : A");
+            }
+            if (sayi < 90 && sayi >= 80)
+            {
+                Console.WriteLine("Harf Notunuz : B");
+            }
+            if (sayi < 80 && sayi >= 70)
+            {
+                Console.WriteLine("Harf Notunuz : C");
+            }
+            if (sayi < 70 && sayi >= 60)
+            {
+                Console.WriteLine("Harf Notunuz : D");
+            }
+            if (sayi < 60)
+            {
+                Console.WriteLine("Harf Notunuz : F");
+            }
+            if (sayi > 100 && sayi < 0)
+            {
+                Console.WriteLine("Yanlış Not Girdiniz.");
+            }
+
+
+            Console.WriteLine("Çıkmak için bir tuşa basınız.");
+
+            Console.ReadKey();
+
+            
+
+        }
+    }
